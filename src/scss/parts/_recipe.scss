@@ -1,0 +1,32 @@
+
+.recipe {
+  padding-top: 5em;
+  margin-bottom: 5em;
+  position: relative;
+  &__img {
+    height: 30em;
+    background-image: url('../img/recipe-dish.png');
+    background-size: cover;
+  }
+  &__content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    &--title {
+      span {
+        color: $accent-color;
+      }
+    }
+  }
+  &__lovers {
+    padding: 2em;
+    margin-top: -20%;
+    z-index: 5;
+    text-align: center;
+    background-color: $primary-background-color;
+    border-radius: .5em;
+    &--typed {
+      color: $accent-color;
+    }
+  }
+}

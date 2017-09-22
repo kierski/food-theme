@@ -5,6 +5,7 @@
   background-color: $primary-background-color;
   box-shadow: 0px 9px 14px 0px rgba(203,203,203,0.9);
   position: fixed;
+  z-index: 1;
   &__container {
     width: 900px;
     margin: 0 auto;
@@ -68,6 +69,6 @@
     }
   }
   &--extended {
-    .nav__logo { width: 45px; height: 45px; }
+    .nav__logo { width: 45px; height: 45px; transform: rotate(360deg); }
   }
 }
