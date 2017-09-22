@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function (event) {
-	// load();
+	load();
   nav();
   header();
 });
