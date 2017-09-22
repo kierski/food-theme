@@ -1,0 +1,23 @@
+{
+  "name": "food-theme-mediaflex",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Andrzej <kierski.andrzej@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "typed.js": "^1.1.4",
+    "jQuery": "^3.1.1"
+  },
+  "directory": "src/components"
+}
