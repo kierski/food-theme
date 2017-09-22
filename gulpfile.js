@@ -7,7 +7,7 @@ const plumber = require('gulp-plumber');
 const babel = require('gulp-babel');
 
 gulp.task('default', () => {
-	return gulp.src(['src/js/load.js', 'src/js/header.js', 'src/js/main.js'])
+	return gulp.src(['src/js/load.js', 'src/js/header.js', 'src/js/nav.js', 'src/js/main.js'])
 		.pipe(plumber())
 		.pipe(sourcemaps.init())
     .pipe(babel({
