@@ -1,0 +1,14 @@
+
+/* box shadow */
+@mixin box-shadow($horizonta, $vertical, $blur, $spread, $color) {
+  box-shadow: $horizonta $vertical $blur $spread $color;
+}
+
+/* clearfix */
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

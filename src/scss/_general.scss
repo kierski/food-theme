@@ -1,6 +1,13 @@
+
 body {
   background-color: $primary-background-color;
   font-family: 'Lato', sans-serif;
+  color: $darker-text-color;
+}
+
+::selection {
+    background: $accent-color;
+    color: $primary-color-text;
 }
 
 main {
@@ -8,3 +15,11 @@ main {
   opacity: 0;
   transition: opacity 1.5s ease-in;
 }
+
+ /* title */
+ .title {
+   margin: 4em 0 4em 0;
+   text-align: center;
+   &__sub { font-size: .9em; color: $accent-color; text-transform: uppercase; }
+   &__heading { color: $darker-text-color; padding-top: .2em; }
+ }

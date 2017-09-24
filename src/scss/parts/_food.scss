@@ -1,0 +1,279 @@
+/* animation keyframes */
+@keyframes pulse {
+  10% {
+    transform: scale(1.2);
+    right: 95%;
+  }
+}
+
+.food {
+  position: relative;
+  z-index: 1;
+  background-color: $accent-color;
+
+  & .title {
+    &__sub {
+      color: $primary-color-text;
+    }
+
+    &__heading {
+      color: $primary-color-text;
+    }
+  }
+
+  &__card {
+    @include box-shadow(0px, 0px, 21px, 1px, $darker-text-color);
+    background-color: $primary-background-color;
+    border-radius: 0.5em;
+    transition: 0.5s;
+
+    &--cover {
+      height: 12em;
+      overflow: hidden;
+      border-top-right-radius: 0.5em;
+      border-top-left-radius: 0.5em;
+      position: relative;
+
+      &-img {
+        height: 100%;
+        background-image: url('../img/food_1.png');
+        background-position: center;
+        background-size: cover;
+      }
+
+      img {
+        max-width: 150%;
+        position: absolute;
+        top: -.5em;
+        left: -2.5em;
+      }
+    }
+
+    &--content {
+      padding: 2em;
+    }
+
+    &--btn {
+      @include box-shadow(0px, 0px, 21px, 1px, $darker-text-color);
+      position: absolute;
+      bottom: 28%;
+      right: 5%;
+      width: 50px;
+      height: 50px;
+      background-color: $primary-background-color;
+      border-radius: 100%;
+      transition: 0.2s;
+
+      &:hover {
+        @include box-shadow(0px, 0px, 30px, 2px, $darker-text-color);
+      }
+
+      &:hover > .food__card--heart {
+        animation: pulse 1s infinite;
+      }
+
+      &:hover > .food__card--heart::after {
+        background-color: $accent-color;
+      }
+
+      &:hover > .food__card--heart::before {
+        background-color: $accent-color;
+      }
+    }
+
+    &--heart {
+      position: absolute;
+      top: 25%;
+      right: 80%;
+      width: 100%;
+      height: 100%;
+
+      &::after,
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 65px;
+        top: 0;
+        width: 15px;
+        height: 25px;
+        background: $light-text-color;
+        border-radius: 50px 50px 0 0;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+        transition: 0.2s;
+      }
+
+      &:after {
+        left: 50px;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+      }
+
+      &.clicked {
+        &::after,
+        &::before {
+          background: $accent-color;
+        }
+      }
+    }
+
+    &--title {
+      h4,
+      h6 {
+        margin: 0;
+        padding: 0;
+      }
+
+      h4 {
+        margin-bottom: 0.2em;
+      }
+
+      h6 {
+        a {
+          color: $accent-color;
+          padding-bottom: 0;
+          border-bottom: 1px solid transparent;
+          transition: 0.2s;
+
+          &:hover {
+            text-decoration: none;
+            padding-bottom: 2.5px;
+            border-bottom: 1px solid $accent-color;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      @include box-shadow(0px, 0px, 50px, 1px, $darker-text-color);
+    }
+  }
+
+  &__social {
+    margin-top: 7em;
+
+    &--title {
+      color: $primary-color-text;
+      font-weight: 300;
+      margin-bottom: 0.5em;
+
+      span {
+        position: relative;
+
+        &::after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 2px;
+          background-color: #fff;
+          position: absolute;
+          left: 0;
+          top: 60%;
+          right: 0;
+          transition: 0.5s;
+        }
+      }
+
+      &:hover span::after {
+        top: 0;
+      }
+    }
+
+    &--txt {
+      color: $primary-color-text;
+      font-weight: 300;
+    }
+
+    &--user {
+      @include clearfix;
+      @include box-shadow(0px, 0px, 7px, 0, $darker-text-color);
+      background-color: $primary-background-color;
+      margin-bottom: 0.7em;
+      padding: 0.7em;
+      border-radius: 0.5em;
+      transition: 0.5s;
+
+      &:first-of-type {
+        margin-top: 5em;
+      }
+
+      &:last-of-type {
+        margin-bottom: 5em;
+      }
+
+      .photo {
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin-right: 0.7em;
+        transform: translateY(20%);
+
+        img {
+          border-radius: 100%;
+        }
+      }
+
+      .bio {
+        font-weight: 300;
+        font-size: 0.9em;
+
+        .name {
+          font-weight: 400;
+        }
+
+        .username {
+          color: $accent-color;
+        }
+
+        .email {
+          a {
+            display: inline-block;
+            color: $accent-color;
+            text-decoration: none;
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+
+            &::after {
+              content: '';
+              display: block;
+              position: absolute;
+              width: 100%;
+              height: 1px;
+              background-color: $accent-color;
+              top: 55%;
+              left: -100%;
+              opacity: 0;
+              transition: 0.5s;
+              z-index: 1;
+            }
+
+            &:hover::after {
+              left: 0;
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        cursor: help;
+        @include box-shadow(0px, 0px, 35px, 1px, $darker-text-color);
+      }
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+  .food__card {
+    margin-bottom: 2em;
+  }
+
+  .food__social {
+    margin-top: 2em;
+  }
+
+  .food__social--user:first-of-type {
+    margin-top: 2em;
+  }
+}

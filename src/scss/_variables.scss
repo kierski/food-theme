@@ -1,8 +1,9 @@
 
 /* non specific color */
-$primary-color-text:   #FFFFFF;
+$primary-color-text:   #ffffff;
 $accent-color:         #ee425a;
-$primary-text-color:   #cbcbcb;
+$light-text-color:   #cbcbcb;
+$darker-text-color:   darken($light-text-color, 45%);
 
 /* backgranuds color */
 $primary-background-color: #ffffff;

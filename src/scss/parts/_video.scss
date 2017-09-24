@@ -1,0 +1,104 @@
+.video {
+  &__player {
+    @include box-shadow(0px, 0px, 22px, 1px, $light-text-color);
+    position: relative;
+    transition: 2s;
+
+    &:hover {
+      cursor: pointer;
+      @include box-shadow(0px, 0px, 10px, 1px, $darker-text-color);
+    }
+
+    &--controlls {
+      z-index: 10;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      outline: 50px solid transparent;
+      opacity: 1;
+      transition: 2s;
+
+      &::after,
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        border: 1px solid $primary-color-text;
+        border-radius: 100%;
+        transition: 2s;
+      }
+
+      &::before {
+        width: 125px;
+        height: 125px;
+        top: -3em;
+        left: -3em;
+      }
+
+      &::after {
+        width: 80px;
+        height: 80px;
+        top: -1.6em;
+        left: -1.7em;
+      }
+
+      i {
+        display: block;
+        position: relative;
+        font-size: 2em;
+        color: $primary-color-text;
+        transition: 1s;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:hover i {
+        transform: rotate(360deg);
+      }
+
+      &:hover::before {
+        width: 80px;
+        height: 80px;
+        top: -1.6em;
+        left: -1.7em;
+      }
+
+      &:hover::after {
+        width: 125px;
+        height: 125px;
+        top: -3em;
+        left: -3em;
+      }
+    }
+
+    &--hiddenControlls {
+      opacity: 0;
+
+      i {
+        transform: rotate(360deg);
+      }
+
+      &::before {
+        width: 80px;
+        height: 80px;
+        top: -1.6em;
+        left: -1.7em;
+      }
+
+      &::after {
+        width: 125px;
+        height: 125px;
+        top: -3em;
+        left: -3em;
+      }
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+  .video__player--controlls {
+    top: 40%;
+    left: 43%;
+  }
+}

@@ -7,7 +7,7 @@ const plumber = require('gulp-plumber');
 const babel = require('gulp-babel');
 
 gulp.task('default', () => {
-	return gulp.src(['src/js/load.js', 'src/js/header.js', 'src/js/nav.js', 'src/js/main.js'])
+	return gulp.src(['src/js/load.js', 'src/js/header.js', 'src/js/nav.js', 'src/js/video.js', 'src/js/hover3d.js', 'src/js/swiper.js', 'src/js/food.js', 'src/js/main.js'])
 		.pipe(plumber())
 		.pipe(sourcemaps.init())
     .pipe(babel({
@@ -23,8 +23,8 @@ gulp.task('watch', () => {
   gulp.watch('src/js/**/*.js', ['default']);
 });
 
-gulp.task('components', () => {
-	return gulp.src(['src/components/jQuery/dist/jquery.min.js', 'src/components/typed.js/js/typed.js'])
+gulp.task('js-components', () => {
+	return gulp.src(['src/js/components/jQuery/dist/jquery.min.js', 'src/js/components/typed.js/js/typed.js', 'src/js/components/hover3d/jquery.hover3d.min.js', 'src/js/components/swiper/swiper.min.js'])
     .pipe(plumber())
     .pipe(concat('components.js'))
     .pipe(uglify())

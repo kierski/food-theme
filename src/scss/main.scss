@@ -4,13 +4,25 @@ Template Name: Mediaflex project test
 Author: A. Kierski
 */
 
+/* font awsome v 4 */
+@import 'libraries/font_awesome/font-awesome';
+
+/* bootstrap v 4 */
+@import 'libraries/bootstrap/bootstrap';
+
+/* hover3d */
+@import 'libraries/hover3d/hover3d';
+
+/* hover3d */
+@import 'libraries/swiper/swiper';
+
 /* variables */
 @import 'variables';
 
-/* variables */
+/* mixins */
 @import 'mixins';
 
-/* variables */
+/* general */
 @import 'general';
 
 /* loader */
@@ -19,5 +31,14 @@ Author: A. Kierski
 /* nav */
 @import 'parts/nav';
 
-/* header */
+/* recipe */
 @import 'parts/recipe';
+
+/* video */
+@import 'parts/video';
+
+/* expect */
+@import 'parts/expect';
+
+/* food */
+@import 'parts/food';

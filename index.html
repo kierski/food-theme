@@ -4,28 +4,28 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Mediaflex - test project, A. Kierski</title>
   <link rel="shortcut icon" href="public/favicon.ico" />
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="public/css/main.css">
 </head>
 
 <body>
 
-  <!-- loader -->
-  <div id="loader-wrapper">
-    <div id="loader">
-      <i class="fa fa-cutlery" aria-hidden="true"></i>
-    </div>
+<div id="loader-wrapper">
+  <div id="loader">
+    <i class="fa fa-cutlery" aria-hidden="true"></i>
   </div>
+</div>
 
   <main class="main">
 
     <nav class="nav">
       <div class="nav__container">
-        <div class="nav__logo"><span class="nav__logo--brand">E</span></div>
+        <a href="#">
+          <div class="nav__logo"><span class="nav__logo--brand">E</span></div>
+        </a>
         <div class="nav__menu">
           <ul class="nav__menu--list">
             <li><a href="#">home</a></li>
@@ -40,10 +40,10 @@
     <div class="recipe">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-4">
+          <div class="col-12 col-md-4">
             <div class="recipe__img"></div>
           </div>
-          <div class="col-7 ml-auto">
+          <div class="col-12 col-md-7 mr-auto">
             <div class="recipe__content">
               <h2 class="recipe__content--title">Daily <span>Recipe</span></h2>
               <p class="recipe__content--txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore enim, ab! Architecto, minima, facilis. Saepe cupiditate ducimus exercitationem quasi, est modi aliquid autem in excepturi.</p>
@@ -51,53 +51,175 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-7">
+          <div class="col-11 col-md-7">
             <div class="recipe__lovers">
               <h2 class="recipe__lovers--title">Best place for <span class="recipe__lovers--typed">food lovers</span> like you</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, harum, quaerat perferendis natus impedit est rerum sit debitis, rem commodi, aliquid doloribus. Amet, reiciendis dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, esse!</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, harum, quaerat perferendis natus impedit est rerum sit debitis, rem commodi, aliquid doloribus. Amet, reiciendis dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Natus, esse!</p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <div class="video">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="title">
+              <span class="title__sub">About the app</span>
+              <h2 class="title__heading">Application intro</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="video__player">
+              <div class="embed-responsive embed-responsive-16by9">
+                <div class="video__player--controlls">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+                <video>
+                  <source src="public/video/tech.mp4" type="video/mp4">
+                  Your browser does not support HTML5 video.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="expect">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="title">
+              <span class="title__sub">What to expect</span>
+              <h2 class="title__heading">Edacious Features</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-7 mr-auto">
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="expect__content">
+                    <h3 class="expect__content--title">Daily <span>Recipe 1</span></h3>
+                    <p class="expect__content--txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore enim, ab! Architecto, minima, facilis.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="expect__content">
+                    <h3 class="expect__content--title">Daily <span>Recipe 2</span></h3>
+                    <p class="expect__content--txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore enim, ab! Architecto, minima, facilis.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="expect__content">
+                    <h3 class="expect__content--title">Daily <span>Recipe 3</span></h3>
+                    <p class="expect__content--txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore enim, ab! Architecto, minima, facilis.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="expect__content">
+                    <h3 class="expect__content--title">Daily <span>Recipe 4</span></h3>
+                    <p class="expect__content--txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore enim, ab! Architecto, minima, facilis.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="expect__img">
+              <img src="public/img/chef.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, deleniti asperiores neque dolores distinctio ex repellendus, facere necessitatibus laudantium omnis voluptatibus itaque ducimus ullam, nisi doloribus velit aliquid expedita cum pariatur
-      sit! Voluptate quaerat dicta odit facilis atque quidem nulla excepturi, cumque, eos rerum deserunt harum enim. Voluptatibus et perferendis, voluptates molestias possimus impedit! Quibusdam tenetur id sed, ducimus eius vero officia. Ipsa, vel, veritatis.
-      Nisi obcaecati sapiente placeat unde recusandae non! Eum, ducimus, facilis. At esse culpa, velit eos porro, minima autem odio impedit minus deserunt, quo mollitia nihil eaque! Nisi, ipsum, sequi? Molestiae optio iusto nam vitae eligendi incidunt
-      perspiciatis quis, inventore ea nulla quos maiores sit repellat eum ipsum, quisquam, suscipit pariatur delectus fuga in quae facere. Odio possimus rem, quod recusandae facere perspiciatis dignissimos, aut obcaecati blanditiis dicta hic ut! Facilis
-      labore, aut fugit adipisci non sapiente similique delectus, quo eos eius. Porro repellendus error, est, optio animi dicta quidem alias ex veritatis magni odio perspiciatis consequatur facere quas modi. Quam eligendi aut architecto delectus ipsum,
-      in omnis adipisci recusandae esse autem tempore possimus expedita deleniti provident tempora vero. Eos aut, ut. Iste hic magnam ducimus! Obcaecati dolor atque doloribus blanditiis natus voluptates magnam eos quasi, commodi incidunt sint, ipsa neque,
-      cupiditate, ut facilis aperiam fugiat! Maxime veritatis iste maiores cupiditate, ab perspiciatis unde, soluta nulla eveniet repudiandae, perferendis excepturi voluptatibus, in voluptatum consequatur! Natus voluptatum eum minus harum provident, nulla
-      aspernatur labore blanditiis, tempora, nostrum ad! Dolorem libero, illo mollitia velit error quam cum ducimus voluptatibus ipsum quo officia quaerat nesciunt inventore vero porro, asperiores veritatis, sit odit commodi eos. Rerum minus modi, hic
-      at expedita, minima est tenetur voluptate inventore dolores? Totam eaque hic et perspiciatis ipsam mollitia possimus alias nobis praesentium voluptas ducimus impedit, unde, cumque, illo velit. Assumenda amet architecto iure. Vero consequatur quidem
-      maiores aliquid eos magnam et eius quod illo dolores enim quisquam, rerum ipsa natus quam dignissimos perferendis, sequi in, autem cumque. Soluta ipsa tempore beatae quo labore impedit, eius adipisci, aliquid veniam dolore quis fugiat excepturi
-      tempora, porro nisi, sed iusto modi corrupti facere tenetur temporibus! Quibusdam consequatur deserunt nihil error corporis vero, iste officiis excepturi, animi quam deleniti, aperiam non. Reprehenderit ullam sapiente necessitatibus explicabo vitae
-      numquam, sunt ut fugiat suscipit temporibus autem dolorum tempore voluptatum, impedit quod, cumque atque enim molestiae eligendi similique dolore. Quo nostrum, dicta inventore! Harum aspernatur amet nisi, aperiam accusantium cumque enim ipsa illo
-      vitae rem architecto vel velit ratione dicta, sunt iste obcaecati tempora delectus corrupti. Voluptate voluptatum quos commodi placeat vel iure aspernatur facere nostrum at sapiente mollitia, perferendis sunt quas, neque. Inventore laborum odit
-      assumenda nobis at quasi ut soluta recusandae, beatae ratione excepturi quas minus, pariatur nulla maxime ducimus totam aspernatur aperiam ipsum nihil voluptatum magni eaque dolorem. Optio veniam, eum, debitis quibusdam nisi architecto. Consectetur
-      eum, facere eius quis beatae molestias porro et eveniet ducimus error sit sint quaerat odit nisi. Explicabo quasi perferendis, facilis cupiditate placeat mollitia, accusantium, aperiam libero ducimus, sunt quaerat cumque. Rerum vel, cumque sequi
-      delectus quasi voluptatem dolorem pariatur mollitia ipsam fugiat enim aut facilis illum id architecto labore nesciunt maxime ex quam perspiciatis quo cum voluptate? Ipsam, animi quos laboriosam! Et nihil deleniti consectetur quibusdam! Fugiat corrupti
-      adipisci, quia at. Nobis inventore dolorum fuga. Pariatur asperiores repellat optio sapiente quis, nemo, sit tenetur placeat eaque culpa eos facere doloremque. Nisi similique facere, voluptas sapiente provident nesciunt voluptatum numquam? Id voluptatum
-      possimus rerum laborum modi ipsum dignissimos, fugiat doloribus laudantium quidem laboriosam quod ut nam et animi delectus velit, enim iure quae, officia eius accusantium nisi pariatur? Repellat ducimus tempore maxime ad quam nemo quibusdam, sed
-      dicta vel dignissimos fuga magni maiores atque velit blanditiis ab explicabo aperiam natus, reiciendis animi laboriosam architecto. Quidem ad, quas eos, dignissimos porro consectetur quasi inventore qui suscipit quis ipsum. Eveniet, libero excepturi
-      labore, ea maiores possimus, adipisci cupiditate vitae a sed consequatur, est tenetur ipsam nihil. Alias sed quibusdam, facilis, distinctio magni sapiente. Quos sed, doloremque totam voluptatibus quaerat quibusdam consectetur sequi consequuntur
-      quia aut recusandae repellat ab enim deleniti, odio architecto, blanditiis amet similique aliquid maiores nihil soluta repudiandae! Culpa eligendi ab, voluptates laborum provident quibusdam voluptatibus laudantium, optio maxime iste ad illum minima
-      consequuntur, dignissimos at necessitatibus! Fugiat accusantium, iste saepe deleniti obcaecati totam sequi dolore quibusdam molestiae omnis aliquid voluptatum doloribus officia perspiciatis. Magnam necessitatibus, eaque id quae. Similique amet vitae,
-      cupiditate exercitationem quidem suscipit nostrum adipisci, reprehenderit provident necessitatibus minima culpa iste voluptatibus est! Exercitationem consequuntur nemo hic aut iure amet. Quis quos quia assumenda, pariatur recusandae nisi, sequi.
-      Mollitia in modi vitae pariatur officiis, voluptate iste, sit odio, qui eligendi magni id alias quidem porro quis. Ipsa cupiditate pariatur ipsum facere culpa incidunt sint quaerat debitis deleniti perspiciatis aspernatur quod beatae doloribus,
-      odit fugiat dolor earum est. Id omnis architecto distinctio quasi natus dolor esse aliquam, vero? Impedit incidunt iure soluta, perferendis enim sit harum et illum in quos, suscipit voluptatibus ex porro dicta commodi quidem officia. Ipsam, dolores
-      assumenda, veritatis voluptates consequuntur pariatur sapiente accusamus aspernatur. Beatae consectetur perferendis neque dignissimos vero itaque unde, perspiciatis laboriosam eos tenetur distinctio ducimus quis, veniam quasi eum repellendus consequuntur,
-      illo laudantium. Eligendi corrupti perferendis distinctio similique hic, harum molestiae et est fugit. Reprehenderit voluptatum molestias porro ipsam, asperiores optio aliquam odio ea quidem adipisci fugiat ex qui non illum sit cupiditate voluptatem
-      cumque in, eos esse error maiores omnis. Inventore iure, debitis excepturi blanditiis possimus dicta optio, magni, consectetur ea necessitatibus ratione unde architecto consequuntur molestias amet! Amet sunt provident, totam aperiam rem. Commodi
-      dolorum quasi blanditiis. Ea nulla esse debitis neque alias ut, vel nemo tempora! Id ullam facilis unde hic tempora dolorum recusandae, voluptate nostrum, error obcaecati, quo libero quidem ea non! Eaque blanditiis fugit temporibus unde odit at
-      aliquam pariatur nulla laborum sit praesentium, vero eum officia doloribus rerum, ducimus sapiente illo! Dolores sed totam, amet, delectus reprehenderit temporibus voluptatum ut necessitatibus quam? Velit culpa eum facilis, praesentium voluptas
-      laborum minus! Minus cupiditate animi, voluptatibus sed beatae odit iure.</p>
+    <div class="food">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="title">
+              <span class="title__sub">About the app</span>
+              <h2 class="title__heading">Application intro</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <div class="food__card">
+              <div class="food__card--cover">
+                <img src="public/img/food_1.png" alt="food img">
+              </div>
+              <div class="food__card--content">
+                <a class="food__card--btn" href="#"><span class="food__card--heart"></span></a>
+                <div class="food__card--title">
+                  <h4>Apple cake</h4>
+                  <h6><a href="#">Lorem ipsum</a> dolor sit amet.</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="food__card">
+              <div class="food__card--cover">
+                <img src="public/img/food_2.png" alt="food img">
+              </div>
+              <div class="food__card--content">
+                <a class="food__card--btn" href="#"><span class="food__card--heart"></span></a>
+                <div class="food__card--title">
+                  <h4>Apple cake</h4>
+                  <h6><a href="#">Lorem ipsum</a> dolor sit amet.</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="food__card">
+              <div class="food__card--cover">
+                <img src="public/img/food_3.png" alt="food img">
+              </div>
+              <div class="food__card--content">
+                <a class="food__card--btn" href="#"><span class="food__card--heart"></span></a>
+                <div class="food__card--title">
+                  <h4>Apple cake</h4>
+                  <h6><a href="#">Lorem ipsum</a> dolor sit amet.</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <div class="food__social">
+              <h2 class="food__social--title">Social <span>Food</span> Feed</h2>
+              <p class="food__social--txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos voluptas excepturi dolores cum quos, laborum, non ad obcaecati neque doloribus alias adipisci perferendis repellat incidunt. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Impedit minus, fuga repudiandae culpa labore debitis.</p>
+            </div>
+          </div>
+          <div class="col-sm-12 ml-auto col-md-5">
+            <div class="food__social--users">
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
 
   </main>
 
-  <script src="https://use.fontawesome.com/6a0ba3b0ba.js"></script>
+
+
   <script src="public/js/components.js"></script>
   <script src="public/js/main.js"></script>
 

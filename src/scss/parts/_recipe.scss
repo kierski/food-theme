@@ -1,32 +1,72 @@
-
 .recipe {
   padding-top: 5em;
-  margin-bottom: 5em;
   position: relative;
+
   &__img {
     height: 30em;
     background-image: url('../img/recipe-dish.png');
     background-size: cover;
   }
+
   &__content {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+
     &--title {
       span {
         color: $accent-color;
       }
     }
   }
+
   &__lovers {
+    @include box-shadow(0px, 0px, 21px, 1px, $light-text-color);
     padding: 2em;
-    margin-top: -20%;
+    margin-top: -6.5em;
     z-index: 5;
     text-align: center;
     background-color: $primary-background-color;
-    border-radius: .5em;
+    border-radius: 0.5em;
+    transition: 2s;
+
+    &--title {
+      font-size: 1.5em;
+    }
+
     &--typed {
       color: $accent-color;
     }
+
+    &:hover {
+      @include box-shadow(0px, 0px, 22px, 1px, $darker-text-color);
+    }
+  }
+
+  .col-4 {
+    padding-left: 0;
+  }
+}
+@include media-breakpoint-down(sm) {
+  .recipe__img {
+    height: 20em;
+  }
+
+  .recipe__lovers {
+    margin-top: -20em;
+
+    h2 {
+      font-weight: 300;
+      font-size: 0.9;
+    }
+
+    p {
+      display: none;
+    }
+  }
+
+  .recipe__content {
+    position: relative;
+    padding-top: 2em;
   }
 }
