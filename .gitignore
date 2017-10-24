@@ -1,5 +1,5 @@
 node_modules
 bower_components
 package-lock.json
-public/video/*.mp4
+public
 img

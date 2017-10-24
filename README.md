@@ -1,3 +1,2 @@
 
-### mediaflex
-## food theme test project
+## food theme project
